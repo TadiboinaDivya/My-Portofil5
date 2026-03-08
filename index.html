@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Divya Portfolio</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial;
+}
+
+/* Navbar */
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 50px;
+background:#0f2027;
+color:white;
+}
+
+nav h1{
+color:#3ec6ff;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+}
+
+nav ul li{
+margin-left:30px;
+}
+
+nav ul li a{
+text-decoration:none;
+color:white;
+font-size:18px;
+}
+
+/* Hero */
+
+.hero{
+text-align:center;
+padding:80px;
+background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+color:white;
+}
+
+.profile-pic{
+width:200px;
+height:200px;
+border-radius:50%;
+border:6px solid #3ec6ff;
+box-shadow:0 0 25px #3ec6ff;
+margin-bottom:20px;
+object-fit:cover;
+}
+
+.hero h2{
+font-size:40px;
+}
+
+.hero span{
+color:#3ec6ff;
+}
+
+.hero p{
+font-size:20px;
+margin:20px 0;
+}
+
+button{
+background:#3ec6ff;
+border:none;
+padding:15px 30px;
+font-size:18px;
+border-radius:30px;
+cursor:pointer;
+}
+
+/* About */ .about{ padding:70px 30px; background:#0fa6ff; } .about h2{ text-align:center; font-size:36px; color:white; margin-bottom:40px; } .about-container{ display:flex; align-items:center; justify-content:center; gap:40px; max-width:1100px; margin:auto; flex-wrap:wrap; } .about-text{ flex:1; } .about-text p{ font-size:18px; line-height:1.8; color:#f1f1f1; background:rgba(255,255,255,0.08); padding:15px 20px; margin-bottom:20px; border-left:4px solid #3ec6ff; border-radius:8px; transition:0.3s; } .about-text p:hover{ transform:translateX(5px); background:rgba(255,255,255,0.15); } .about-images{ flex:1; display:grid; grid-template-columns:repeat(2,1fr); gap:20px; justify-items:center; } .about-images img{ width:260px; /* increased width */ height:200px; /* increased height */ object-fit:cover; object-position:top; border-radius:12px; box-shadow:0 6px 18px rgba(0,0,0,0.3); transition:0.3s; } .about-images img:hover{ transform:scale(1.08); }
+
+
+
+/* Skills */
+
+.skills{
+padding:60px;
+background:blue;
+text-align:center;
+}
+
+.skills h2{
+margin-bottom:20px;
+}
+
+.skill-box{
+margin:20px auto;
+max-width:400px;
+text-align:left;
+}
+
+/* Certificates */
+
+.certificates{
+padding:60px;
+background:aqua;
+text-align:center;
+}
+
+.certificates h2{
+font-size:36px;
+color:goldenrod;
+margin-bottom:40px;
+}
+
+.certificate-container{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:30px;
+max-width:900px;
+margin:auto;
+}
+
+.certificate-card{
+background:#0f2027;
+padding:15px;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,0.2);
+transition:0.3s;
+}
+
+.certificate-card:hover{
+transform:scale(1.05);
+}
+
+.certificate-card img{
+width:100%;
+height:200px;
+object-fit:cover;
+border-radius:8px;
+}
+
+.certificate-card p{
+margin-top:10px;
+font-weight:bold;
+}
+
+
+
+.bar{
+background:floralwhite;
+height:20px;
+border-radius:10px;
+}
+
+.progress{
+background:black;
+height:20px;
+border-radius:10px;
+}
+
+/* Contact Section */
+
+.contact{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+background:aquamarine;
+}
+
+.contact-box{
+background:cornsilk;
+padding:40px;
+width:350px;
+border-radius:12px;
+box-shadow:0 10px 30px rgba(0,0,0,0.3);
+text-align:center;
+}
+
+.contact-box h2{
+margin-bottom:20px;
+color:#0f202;
+}
+
+.contact-box input,
+.contact-box textarea{
+width:100%;
+padding:12px;
+margin:10px 0;
+border:1px solid #ccc;
+border-radius:8px;
+font-size:15px;
+}
+
+.contact-box button{
+width:100%;
+padding:12px;
+margin-top:10px;
+background:#3ec6ff;
+border:none;
+border-radius:25px;
+font-size:16px;
+cursor:pointer;
+color:white;
+}
+
+.contact-box button:hover{
+background:#0f2027;
+}
+
+
+/* Social Links */
+
+.social-links{
+margin-top:20px;
+display:flex;
+justify-content:center;
+gap:15px;
+}
+
+.social-links a{
+text-decoration:none;
+background:#3ec6ff;
+color:white;
+padding:8px 15px;
+border-radius:20px;
+font-size:14px;
+transition:0.3s;
+}
+
+.social-links a:hover{
+background:#0fa6ff;
+}
+
+footer{
+background:#0f2027;
+color:white;
+text-align:center;
+padding:20px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- Navbar -->
+
+<nav>
+
+<h1>Divya</h1>
+
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#Certificates">Certificates</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+
+</nav>
+
+<!-- Hero -->
+
+<section class="hero">
+
+<img src="C:\Users\divya\Desktop\divya\image.jpeg3.jpeg"class="profile-pic">
+
+<h2>Hi, I'm <span>Divya Tadiboina</span></h2>
+
+<p>Frontend Developer | CSE Student</p>
+
+<button>Download Resume</button>
+
+</section>
+
+<!-- About -->
+
+<section class="about" id="about">
+
+<h2>About Me</h2>
+
+<div class="about-container">
+
+<div class="about-text">
+
+<p>
+I am <strong>Divya Tadiboina</strong>, a passionate <strong>Computer Science and Engineering (CSE)</strong> student with a strong interest in <strong>Frontend Web Development</strong>. I enjoy building modern, responsive, and user-friendly websites using technologies like <strong>HTML, CSS, and JavaScript</strong>.
+</p>
+
+<p>
+I love learning new technologies and improving my development skills every day. Studying in the field of computer science helps me understand how technology works and how I can use it to build useful digital solutions.
+</p>
+
+<p>
+Apart from coding and studying, I enjoy <strong>traveling and exploring new places</strong>. Traveling helps me relax, gain new experiences, and see the world from different perspectives.
+</p>
+
+<p>
+My goal is to continue learning, building projects, and growing as a web developer while creating websites that are useful, creative, and meaningful.
+</p>
+
+</div>
+
+<div class="about-images">
+
+<img src="C:\Users\divya\Desktop\divya\image.jpeg"class="square">
+
+<img src="C:\Users\divya\Desktop\divya\image.jpeg4.jpeg"class="square">
+
+<img src="C:\Users\divya\Desktop\divya\image.jpeg5.jpeg"class="square">
+
+<img src="C:\Users\divya\Desktop\divya.jpg"class="square">
+
+</div>
+
+</div>
+
+</section>
+
+<!-- Skills -->
+
+<section class="skills" id="skills">
+
+<h2>My Skills</h2>
+
+<div class="skill-box">
+<p>HTML</p>
+<img src="C:\Users\divya\Desktop\divya\image.jpeg6.jpg">
+<div class="bar">
+<div class="progress" style="width:80%"></div>
+</div>
+
+<div class="skill-box">
+<p>CSS</p>
+<img src="C:\Users\divya\Desktop\divya\image.jpeg7.jpg">
+<div class="bar">
+<div class="progress" style="width:55%"></div>
+
+</div>
+
+<div class="skill-box">
+<p>JavaScript</p>
+<img src="C:\Users\divya\Desktop\divya\image.jpeg8.jpg">
+<div class="bar">
+<div class="progress" style="width:40%"></div>
+</div>
+
+</section>
+<!-- Certificates -->
+
+<section class="certificates" id="certificates">
+
+<h2><strong>My Certificates</strong></h2>
+
+<div class="certificate-container">
+
+<div class="certificate-card">
+<img src="C:\Users\divya\Desktop\divya\image.jpeg1.jpeg" alt="Certificate">
+<p> SCIENCE EXPO Certificate At Clg</p>
+</div>
+
+<div class="certificate-card">
+<img src="C:\Users\divya\Desktop\divya\image.jpeg2.jpeg" alt="Certificate">
+<p>SCIENCE EXPO Certificate At School</p>
+</div>
+</div>
+
+</section>
+
+
+<!-- Contact -->
+<section class="contact" id="contact">
+
+
+<div class="contact-box">
+<h2>Contact Me</h2>
+
+<form>
+<input type="text" placeholder="Your Name" required>
+
+<input type="email" placeholder="Your Email" required>
+
+<input type="text" placeholder="Languagage">
+
+<textarea placeholder="Your Message" rows="4"></textarea>
+
+<button type="submit">Send Message</button>
+
+
+<p>My Contact Number</p>
+<input type=" My Contact Number" placeholder="9701585691" required>
+
+<p>My Email</p>
+<input type="email" placeholder="divyatadiboina.5@gmail.com" required>
+</form>
+
+<div class="social-links">
+
+
+
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>© 2026 Divya Portfolio</p>
+
+</footer>
+
+</body>
+</html>
+```
